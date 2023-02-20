@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background: url(../assets/moroccan-flower.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5px;
+}
+header {
+    background: white;
+    border-bottom: 1px solid black;
+}
+.navbar {
+    display: flex;
+    align-items: stretch;
+    padding-top: 10px;
+    
+}
+.navbar > h1 {
+    flex-grow: 1;
+    text-align: left;
+}
+.navbar > nav {
+    flex-grow: 8; 
+    text-align: right;
+}
+.content {
+    display: flex;
+    align-items: stretch;
+    padding: 30px 0;
+    
+}
+.content > main {
+    max-width: 60%;
+    flex-grow: 8;
+    background: white;
+    margin: 20px;
+    padding: 5px 5px;
+
+}
+.content > aside {
+    max-width: fit-content;
+    height: fit-content;
+    flex-grow: 1;
+    background: white;
+    margin: 20px;
+    padding: 5px 5px;
+    align-items: center;
+}
+nav a {
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+nav {
+    overflow: hidden;
+    display: inline-block;
+    padding: 14px 16px;
+}
+a:hover:not(.active) {
+    background: #ddd;
+}
+a.active {
+    color: white;
+    background-color: #04aa6d;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, a {
+    font-family: 'Bangers', cursive;
+}
+h1 {
+    font-size: 16;
+}
+h2 {
+    font-size: 14;
+    border-bottom: 1px solid black;
+    padding: 0 5px;
+}
+h3 {
+    font-size: 12;
+    padding: 0 5px;
+    border-bottom: 1px solid black;
+}
+p {
+    font-size: 10;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+img {
+    float: left;
+    padding: 5px;
+}
+aside > a  {
+    box-shadow: 2px 0px 1px 1px black;
+}
+footer {
+    margin-top: auto;
+    background: lightgray;
+    border-top: 2px solid black;
+    padding: 10px;
+}
+footer p {
+    font-size: 10;
+    text-align: center;
+}
